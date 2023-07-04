@@ -10,7 +10,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
 body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(/eka/img/background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
