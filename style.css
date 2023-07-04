@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #FFFBE9;
+  }
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(/eka/img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+  
+header {
+    color: #FFFBE9;
+    padding: 20px;
+    text-align: center;
+}
+  
+header h1 {
+    font-weight: 900;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px;
+}
+  
+section h2 {
+    color: #FFFBE9;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+section .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+section .menu .menu-item h3, p {
+    color: #FFFBE9;
+}
+
+section .menu .menu-item p {
+    font-weight: 200;
+    font-size: 13px;
+}
+
+section .menu-item img {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+section .menu-item button {
+    background-color: #AF6F33;
+    color: #FFFBE9;
+    font-size: 12px;
+    padding: 10px 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+section .menu-item button:hover {
+    background-color: #c57b36;
+}
+
+#cart {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#cart h2 {
+    color: #FFFBE9;
+}
+
+#cart p {
+    font-size: 14px;
+}
+
+#cart button {
+    background-color: #AF6F33;
+    color: #FFFBE9;
+    font-size: 12px;
+    padding: 10px 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#cart button:hover {
+    background-color: #C57B36;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Tampilan responsif untuk layar kecil */
+  @media (max-width: 600px) {
+    section {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+  
+  /* Tampilan responsif untuk layar sedang */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    section {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
